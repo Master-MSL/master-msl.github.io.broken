@@ -1,10 +1,6 @@
-script: bundle exec rake deploy
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: "$GITHUB_TOKEN"
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
     branch: master
-env:
-  global:
-    secure: WmfdRu3AX2B35COX4xhzqA958Wdt8KhF/Wcep7eZE4sgX9ppTEMQ6CbKlNn5lq5bg8jiObtc5XR7E+6gKIs+2aOiKW52rFOydSZxvtpR8O/yCYN1GNbtsVpWU+2qPD1qfVesPbz8T3fUBou1tifN5G/zkoQTZx4J0jpFlrk0OQHfbPAPpcEVB+J72A56JNqx86ibVYSxMkkIPeiyipj907bLpaGBMTArBqnUpzYMqiRbZUj5pzakOkDOi6EqDTlRrjyjOtrKhw5I9BPLzBeDeXll2cyTLKG1d3hAVHSsIA/9va79/LTWq0uuKya2IVV5uBbBO8NezoWPrXj90yLpYtXugqLFG0aV4N/x6b0B0QMFCG0Bk7lgsk7gPnTx3sl3b0zTXQeibZBUxcvghcoFgqN5uUXqPTJS6lTTq22bfoCZkh7+O9+b6wKD04igll8hJWKjxg0T7z38mror2S25fnqk9GddqUy4H8jHXWOYpd9DS4qJLuP+IkLnLsPpqGepZPkaZTlUrDHJzyul4YFiKsWF++e4Jn37rG6ApiPyO1kzgipDeMPPYZ86Vt8uV10SqDr3GByN9A2Hv2zUxipo2zhMNdV4MU5oZmX2TOe7iz7YFH8YDED7u3mISAHZ3b6noUxj497LWC2vDNEz8MedIZUDINvrdCjIgK5u2/tnZYk=
