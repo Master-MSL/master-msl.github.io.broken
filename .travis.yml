@@ -1,4 +1,5 @@
 script: bundle exec rake deploy
+cache: bundler
 deploy:
   provider: pages
   skip_cleanup: true
